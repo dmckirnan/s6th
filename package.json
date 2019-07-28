@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
-    "test": "mocha --require babel-core/register --require ./test/config.js \"src/**/*.spec.js\" --exit",
+    "test": "mocha --require babel-core/register --require ./test/config.js \"src/**/*.spec.js\" --exit"
   },
   "repository": {
     "type": "git",
