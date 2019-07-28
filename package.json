@@ -83,5 +83,5 @@
     "sinon": "^6.3.5",
     "sinon-chai": "^3.3.0",
     "webpack-dev-server": "^3.7.0"
-  },
+  }
 }
