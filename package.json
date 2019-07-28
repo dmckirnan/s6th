@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -p",
-    "start:dev": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
     "test": "mocha --require babel-core/register --require ./test/config.js \"src/**/*.spec.js\" --exit",
-    "heroku-postbuild": "npm start"
+    "postinstall": "webpack -p"
   },
   "repository": {
     "type": "git",

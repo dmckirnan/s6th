@@ -70,13 +70,6 @@ const devServer = {
   contentBase: BUILD_PATH,
   open: true,
   historyApiFallback: true,
-  proxy: {
-    '/api': {
-      target: 'http://localhost:8000',
-      pathRewrite: { '^/api': '' },
-      secure: false
-    }
-  }
 };
 
 const resolve = {
