@@ -1,0 +1,47 @@
+$black: #000000;
+$blue: #0040ff;
+$disabled-gray: #d3d3d3;
+$hover-blue: #3366ff;
+$white: #FFF;
+
+$common-bg-color-transition: 0.35s background-color ease-in-out, 0.35s color ease-in-out;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: max-content;
+  min-width: 120px;
+  color: $black;
+  border-radius: 60px;
+  transition: $common-bg-color-transition;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hover-blue;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-active {
+  background-color: $blue;
+  color: $white;
+  transition: $common-bg-color-transition;
+}
+
+.button-disabled {
+  background-color: $disabled-gray;
+  color: $black;
+
+  &:hover {
+    cursor: default;
+    background-color: $disabled-gray;
+    color: $black;
+  }
+}

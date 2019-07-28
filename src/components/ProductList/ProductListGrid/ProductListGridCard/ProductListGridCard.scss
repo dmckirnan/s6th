@@ -1,0 +1,36 @@
+.product-list-grid-card {
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  width: 30%;
+  margin-left: 25px;
+}
+
+.img {
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.title,
+.promotes,
+.name,
+.price {
+  height: 17px;
+  width: max-content;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.title {
+  /* Allows for title to line-wrap */
+  height: auto;
+  max-width: 80%;
+  word-break: break-all;
+}

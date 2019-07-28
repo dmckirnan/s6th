@@ -1,0 +1,34 @@
+
+.product-list-header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.title {
+  height: 17px;
+  width: max-content;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+
+  button {
+    margin-left: 10px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
