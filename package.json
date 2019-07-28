@@ -31,6 +31,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^0.1.19",
     "connect-history-api-fallback": "^1.6.0",
     "css-loader": "^1.0.1",
     "css-modules-require-hook": "^4.2.3",
