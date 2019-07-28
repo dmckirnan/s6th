@@ -12,14 +12,11 @@ import sass from 'node-sass';
 import hook from 'css-modules-require-hook';
 import 'babel-polyfill';
 
-// const paths = config.utils_paths;
-
 hook({
   generateScopedName: '[name]__[local]__[hash:base64:5]',
   extensions: ['.scss'],
   preprocessCss: data => sass.renderSync({
     data,
-    // includePaths: [paths.client('scss')],
   }).css,
   camelCase: true,
 });
@@ -29,9 +26,6 @@ configure({ adapter: new Adapter() });
 
 const { JSDOM } = require('jsdom');
 
-// -------------------------------
-// Disable webpack-specific features for tests since
-// Mocha doesn't know what to do with them.
 ['.png', '.jpg'].forEach(ext => {
   require.extensions[ext] = () => null;
 });

@@ -1,5 +1,4 @@
 import compose from 'ramda/src/compose';
-import descend from 'ramda/src/descend';
 import path from 'ramda/src/path';
 import reverse from 'ramda/src/reverse';
 import sortBy from 'ramda/src/sortBy';
