@@ -17,7 +17,7 @@ if (!PRODUCTION_ENV) entry.push('webpack-hot-middleware/client?reload=true');
 
 /* Output Data */
 const output = {
-  path: path.join(__dirname, 'dist'),
+  path: path.join(__dirname, 'build'),
   publicPath: '/',
   filename: '[name].[hash].js',
   chunkFilename: '[chunkhash].[name].bundle.js',
@@ -87,7 +87,7 @@ const resolve = {
 };
 
 const plugins = [
-  new CleanWebpackPlugin('dist', {}),
+  new CleanWebpackPlugin('build', {}),
   new HtmlWebpackPlugin({
     inject: 'body',
     hash: true,
